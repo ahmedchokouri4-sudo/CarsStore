@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Logo from "../assets/Logo/touringcars.png"
+import MobileLogo from "../assets/cars/tclogo 1.png"
 import { FaBars, FaTimes } from "react-icons/fa"
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import About from './Pages/About'
 
 const NavBar = () => {
@@ -17,21 +18,36 @@ const NavBar = () => {
       {/* Logo */}
       <div>
         <Link to="/">
-          <img src={Logo} alt="TouringCars Logo" className="h-10" />
+          <img src={Logo} alt="TouringCars Logo" className="h-10 hidden md:block" />
         </Link>
       </div>
+      {/* Mobile Logo */}
+    <Link to="/">
+      <img src={MobileLogo} alt="TouringCars Logo" className="h-8 block md:hidden" />
+    </Link>
+
+      
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex md:gap-8">
         <li>
-          <Link to={"/About"} className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300">
+          <NavLink to={"/About"}  
+         className={({ isActive }) =>
+          isActive
+            ? "text-lg text-black bg-black p-1.5 rounded-lg transition-all text-white duration-300"
+            : "text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300"
+        }>
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
+          <NavLink to={"/Contact"}  className={({ isActive }) =>
+          isActive
+            ? "text-lg text-black bg-black p-1.5 rounded-lg transition-all text-white duration-300"
+            : "text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300"
+        } href="#">
             Contact
-          </Link>
+          </NavLink>
         </li>
         <li>
           <Link className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
@@ -61,9 +77,9 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="w-full text-center py-3 border-b border-gray-200">
-            <a className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
+            <Link to="Contact" onClick={() => setIsOpen(false)} className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
               Contact
-            </a>
+            </Link>
           </li>
           <li className="w-full text-center py-3 border-b border-gray-200">
             <a className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">

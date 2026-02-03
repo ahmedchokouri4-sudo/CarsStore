@@ -67,12 +67,12 @@ const Announce = () => {
             <h3 className='pb-3 font-bold'>Vehicle data</h3>
             <div className='grid grid-cols-2  lg:grid-cols-3 gap-6  '>
                 
-                <input  value={VehicleData.mark} onChange={HandleChange} name='mark' type="text" placeholder='Mark' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96'  />
-                <input value={VehicleData.model} onChange={HandleChange} name='model' type="text" placeholder='Model ' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96' />
-                <input value={VehicleData.version} onChange={HandleChange} name='version' type="text" placeholder='Version' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96' />
-                <input value={VehicleData.vmilage} onChange={HandleChange} name='vmilage' type="text" placeholder='Vehicle mileage' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96'/>
-                <input value={VehicleData.vyear} onChange={HandleChange} name='vyear' type="text" placeholder='Vehicle year' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96'/>
-                <input value={VehicleData.desiredValue} onChange={HandleChange} name='desiredValue' type="text" placeholder='Desired value' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96'/>
+                <input  value={VehicleData.mark} onChange={HandleChange} name='mark' type="text" placeholder='Mark' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl'  />
+                <input value={VehicleData.model} onChange={HandleChange} name='model' type="text" placeholder='Model ' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl' />
+                <input value={VehicleData.version} onChange={HandleChange} name='version' type="text" placeholder='Version' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl' />
+                <input value={VehicleData.vmilage} onChange={HandleChange} name='vmilage' type="text" placeholder='Vehicle mileage' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl'/>
+                <input value={VehicleData.vyear} onChange={HandleChange} name='vyear' type="text" placeholder='Vehicle year' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl'/>
+                <input value={VehicleData.desiredValue} onChange={HandleChange} name='desiredValue' type="text" placeholder='Desired value' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl'/>
             </div>
             <div/>
         <div>
@@ -81,9 +81,9 @@ const Announce = () => {
                 <h3 className='pt-3 font-bold'>Personal data</h3>
             <div className='grid grid-cols-2  lg:grid-cols-3 gap-6 '>
                 
-                <input value={VehicleData.pname} onChange={HandleChange} name='pname' type="text" placeholder='Name'  className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96'/>
-                <input value={VehicleData.email} onChange={HandleChange} name='email' type="Email" placeholder='E-mail'  className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96'/>
-                <input value={VehicleData.numero} onChange={HandleChange}  name='numero' type="number" placeholder='Número' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-96' />
+                <input value={VehicleData.pname} onChange={HandleChange} name='pname' type="text" placeholder='Name'  className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl'/>
+                <input value={VehicleData.email} onChange={HandleChange} name='email' type="Email" placeholder='E-mail'  className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl'/>
+                <input value={VehicleData.numero} onChange={HandleChange}  name='numero' type="number" placeholder='Número' className='border-1 border-black/50 rounded-lg py-2 pl-3 lg:max-w-2xl' />
                 
                 
             </div>
@@ -103,8 +103,8 @@ const Announce = () => {
             <p className='text-xs '>No file selected.</p>
             </div>
         </div>
-        <div className='grid grid-cols-1  space-y-6 '>
-            <input type="submit" value="Send"  className='mt-10 border-1 bg-black text-white  border-black max-w-48 px-4 py-2 text-center rounded-lg hover:bg-white hover:text-black hover:border-2 transition-all duration-300 cursor-pointer  max-w-dvh'/>
+        <div className='grid grid-cols-1  space-y-6  '>
+            <input type="submit" value="Send"  className=' lg:ml-[1920px]  mt-10 border-1 bg-black text-white  border-black max-w-48  px-4 py-2 text-center rounded-lg hover:bg-white hover:text-black hover:border-2 transition-all duration-300 cursor-pointer lg:max-w-xs '/>
             <div className='flex gap-2  items-start'>
             <input type="checkbox" checked={VehicleData.agreed} onChange={HandleChange} name='agreed' className='mt-1' />
             <p className='text-xs'>In accordance with the LGPD (Brazilian General Data Protection Law), I agree to provide the above data so that Torres Cars can contact me to present services. Your name, email, and phone number will be used in accordance with our Privacy Policy.</p>

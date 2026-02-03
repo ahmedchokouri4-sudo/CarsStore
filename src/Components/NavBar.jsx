@@ -50,14 +50,22 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
-          <Link className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
+          <NavLink to={"/Announce"} className={({ isActive }) =>
+          isActive
+            ? "text-lg text-black bg-black p-1.5 rounded-lg transition-all text-white duration-300"
+            : "text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300"
+        } href="#">
             Announce
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
+          <NavLink to={"/Stock"} className={({ isActive }) =>
+          isActive
+            ? "text-lg text-black bg-black p-1.5 rounded-lg transition-all text-white duration-300"
+            : "text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300"
+        } href="#">
             Stock
-          </Link>
+          </NavLink>
         </li>
       </ul>
 
@@ -77,19 +85,19 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="w-full text-center py-3 border-b border-gray-200">
-            <Link to="Contact" onClick={() => setIsOpen(false)} className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
+            <Link to="/Contact" onClick={() => setIsOpen(false)} className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
               Contact
             </Link>
           </li>
           <li className="w-full text-center py-3 border-b border-gray-200">
-            <a className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
+            <Link to="/Announce" onClick={() => setIsOpen(false)} className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
               Announce
-            </a>
+            </Link>
           </li>
           <li className="w-full text-center py-3">
-            <a className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
+            <Link to="/Stock" onClick={() => setIsOpen(false)} className="text-lg text-black hover:bg-black p-1.5 rounded-lg transition-all hover:text-white duration-300" href="#">
               Stock
-            </a>
+            </Link>
           </li>
         </ul>
       )}

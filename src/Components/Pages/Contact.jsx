@@ -14,10 +14,10 @@ const Contact = () => {
     <h1 className='text-left font-bold text-2xl'>Contact</h1> 
     <div className='  flex flex-col justify-start  lg:w-[400px] '>    
          
-        <button className='  flex lg:justify-start bg-black text-white text-left px-4 py-3 rounded-2xl items-center gap-3  '><BiPhone /> Contact us</button><br />
-        <button className='flex lg:justify-start bg-black text-white  text-left px-4 py-3 rounded-2xl items-center gap-3 '><HiOutlineMail/> Send an email</button><br />
-        <button className='flex lg:justify-start bg-black text-white  text-left px-4 py-3 rounded-2xl items-center gap-3 '><FaWhatsapp/> WhatsApp</button><br />
-        <button className='flex lg:justify-start bg-black text-white  text-left px-4 py-3 rounded-2xl items-center gap-3 '><FaInstagram/> Instagram</button><br />
+        <button className='  flex lg:justify-start bg-black text-white text-left px-4 py-3 rounded-2xl items-center gap-3 cursor-pointer hover:text-black hover:bg-white hover:border-2 hover:border-black transition-all duration-300 font-bold '><BiPhone /> Contact us</button><br />
+        <button className='flex lg:justify-start bg-black text-white  text-left px-4 py-3 rounded-2xl items-center gap-3 cursor-pointer hover:text-black hover:bg-white hover:border-2 hover:border-black transition-all duration-300 font-bold'><HiOutlineMail/> Send an email</button><br />
+        <button className='flex lg:justify-start bg-black text-white  text-left px-4 py-3 rounded-2xl items-center gap-3 cursor-pointer hover:text-black hover:bg-white hover:border-2 hover:border-black transition-all duration-300 font-bold'><FaWhatsapp/> WhatsApp</button><br />
+        <button className='flex lg:justify-start bg-black text-white  text-left px-4 py-3 rounded-2xl items-center gap-3 cursor-pointer hover:text-black hover:bg-white hover:border-2 hover:border-black transition-all duration-300 font-bold'><FaInstagram/> Instagram</button><br />
         </div>
    </div>
    <div className='lg:py-20 px-4'>

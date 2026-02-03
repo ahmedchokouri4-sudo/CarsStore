@@ -11,6 +11,8 @@ import { Route,Routes } from 'react-router-dom'
 import About from './Components/Pages/About'
 import HomePage from './Components/Pages/HomePage'
 import Contact from './Components/Pages/Contact'
+import Announce from './Components/Pages/Announce'
+import Stock from './Components/Pages/Stock'
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Route path="/" element={<HomePage/>} />
       <Route path='/About' element={<About/>}/>
       <Route path='/Contact' element={<Contact/>}/>
+      <Route path='/Announce' element={<Announce/>}/>
+      <Route path='/Stock' element={<Stock/>}/>
     </Routes>
     <Footer />
    </div>

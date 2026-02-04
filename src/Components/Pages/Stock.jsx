@@ -23,10 +23,10 @@ const Stock = () => {
 
   return (
     <div className="bg-[#F9FAFB] min-h-screen font-sans antialiased">
-      {/* Container m9add b max-width w responsive padding */}
+     
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 py-8 lg:py-16">
         
-        {/* Header Responsive: kiy-t-sttef f mobile (flex-col) w kiy-t-fere9 f desktop (md:flex-row) */}
+        
         <header className="mb-10 lg:mb-16 border-b border-gray-100 pb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <div className="space-y-2">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black uppercase italic tracking-tighter text-slate-900 leading-none">
@@ -41,11 +41,7 @@ const Stock = () => {
           </div>
         </header>
 
-        {/* Grid Responsive: 
-            - grid-cols-1: Mobile (wa7da f l-ster)
-            - md:grid-cols-2: Tablette (joj f l-ster)
-            - lg:grid-cols-3: Desktop (tlata f l-ster)
-        */}
+        
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-pulse">
              {[1,2,3].map(i => <div key={i} className="h-72 bg-gray-200 rounded-[2.5rem]" />)}
@@ -63,7 +59,7 @@ const Stock = () => {
                   ✕
                 </button>
 
-                {/* Image Container - Responsive Height */}
+                
                 <div className="h-48 sm:h-56 lg:h-60 w-full overflow-hidden rounded-[1.8rem] sm:rounded-[2.2rem] bg-gray-50 mb-4 sm:mb-6 relative">
                   <img 
                     src={car.image || 'https://via.placeholder.com/600x400?text=No+Photo'} 

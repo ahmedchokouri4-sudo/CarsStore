@@ -3,63 +3,82 @@ import BackPorshe from "../../assets/cars/porsche-model1 1.png"
 
 const About = () => {
   return (
-    <div >
-      <div className='flex flex-col  md:flex-row  md:justify-between md:gap-6 lg:flex-row  lg:justify-center   px-6 py-12 space-y-6 lg:space-x-6  '>
-        <div className='flex flex-col  bg-gray-300/40 px-6 py-5 rounded-3xl space-y-3 md:max-w-xs    md:space-y-5 md:h-200 lg:max-w-2xl   lg:space-y-26 lg:max-h-200   text-gray-700 text-lg justify-center '>
-          <h1 className='font-bold text-2xl text-black  lg:text-3xl md:text-2xl'>About us</h1>
-          <p className=' lg:text-2xl  md:text-xl'>Touring Cars specializes primarily in the sale of luxury and super sports cars. With safety, transparency, and quality in mind, our vehicles are inspected and certified to guarantee our customers a completely secure purchase.</p>
-          <p className=' lg:text-2xl md:text-xl'>We offer special and exclusive items, as well as a large stock that is renewed daily to provide the best experience and a high standard of quality.</p>
-          <p className='lg:text-2xl md:text-xl'>Touring Cars is proud to partner with the best suppliers, dealerships, and technical centers in the world to jointly design one of the best luxury car sales structures in the country.</p>
+    <div className="max-w-7xl mx-auto"> {/* Container kbir bach mayfutch l-qyas f screens kbar */}
+      
+      {/* 1ère Section: About Us & Image */}
+      <div className='flex flex-col lg:flex-row items-center justify-between px-6 py-12 gap-10'>
+        
+        {/* Text Side */}
+        <div className='flex flex-col bg-gray-300/40 px-8 py-10 rounded-3xl space-y-6 w-full lg:w-1/2 min-h-180 justify-center '>
+          <h1 className='font-bold text-3xl text-black lg:text-4xl'>About us</h1>
+          <div className='space-y-4 lg:space-y-20 text-gray-700 text-lg lg:text-xl leading-relaxed'>
+            <p>Touring Cars specializes primarily in the sale of luxury and super sports cars. With safety, transparency, and quality in mind, our vehicles are inspected and certified to guarantee our customers a completely secure purchase.</p>
+            <p>We offer special and exclusive items, as well as a large stock that is renewed daily to provide the best experience and a high standard of quality.</p>
+            <p>Touring Cars is proud to partner with the best suppliers, dealerships, and technical centers in the world to jointly design one of the best luxury car sales structures in the country.</p>
+          </div>
         </div>
-        <div className='md:max-w-xs md:mr-35 '>
-          <img src={BackPorshe} alt="BackPorshe" className='bg-gray-300/40 rounded-3xl lg:max-h-200 md:max-w-xl md:h-200 ' />
+
+        {/* Image Side */}
+        <div className='w-full lg:w-1/2'>
+          <img 
+            src={BackPorshe} 
+            alt="BackPorshe" 
+            className='bg-gray-300/40 rounded-3xl w-full h-full object-cover shadow-lg' 
+          />
         </div>
       </div>
-      {/* 2eme section */}
-    <div className=' space-y-6 md:space-y-0  '>
-  {/* Mission & Vision */}
- <div className='flex flex-col items-center justify-center  space-y-6 px-4 py-6 '>
 
-  
- <div className="w-full flex flex-col items-center  py-6 px-4 space-y-6">
+      {/* 2ème section: Mission, Vision, Values */}
+      <div className='px-6 py-10 space-y-8'>
+        
+        {/* Mission & Vision Row */}
+        <div className="flex flex-col md:flex-row gap-6 w-full justify-center">
+          {/* Mission */}
+          <div className="bg-black text-white p-8 rounded-2xl w-full lg:w-1/2 transition-transform hover:scale-[1.02]">
+            <h1 className="font-bold text-2xl mb-4">Mission</h1>
+            <p className="text-gray-300 text-lg">
+              To be the best choice in premium automobiles and to be part of people's special life moments.
+            </p>
+          </div>
 
-  
-  <div className="flex flex-col md:flex-row gap-12 lg:justify-center items-stretch w-full lg:ml-31 ">
-    <div className="bg-black text-white px-6 py-4 space-y-4 rounded-xl w-full md:w-96  lg:w-2xl">
-      <h1 className="font-bold text-xl  md:text-left">Mission</h1>
-      <p className=" md:text-left">
-        To be the best choice in premium automobiles and to be part of people's special life moments.
-      </p>
+          {/* Vision */}
+          <div className="bg-black text-white p-8 rounded-2xl w-full lg:w-1/2 transition-transform hover:scale-[1.02]">
+            <h1 className="font-bold text-2xl mb-4">Vision</h1>
+            <p className="text-gray-300 text-lg">
+              To be a national benchmark as the most surprising company in connecting people, vehicles, goods, and related services.
+            </p>
+          </div>
+        </div>
+
+        {/* Values - Full Width */}
+        <div className="w-full">
+          <div className="bg-black text-white p-8 rounded-2xl w-full shadow-xl">
+            <h1 className="font-bold text-2xl mb-6">Values</h1>
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg">
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-500">•</span> <span>Inspiring people</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-500">•</span> <span>Anticipating demands</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-500">•</span> <span>Excellence in all processes</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-500">•</span> <span>Fully satisfied clients</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-500">•</span> <span>Constant social action</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-500">•</span> <span>Sustainability</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <div className="bg-black text-white px-6  py-4  space-y-4 rounded-xl w-full md:w-96  lg:w-xl ">
-      <h1 className="font-bold text-xl  md:text-left">Vision</h1>
-      <p className=" md:text-left">
-        To be a national benchmark as the most surprising company in connecting people, vehicles, goods, and related services.
-      </p>
-    </div>
-  </div>
-
-  {/* Values */}
-  <div className="w-full flex justify-center max-w-full  ">
-    <div className="bg-black text-white px-6 py-4 space-y-4 rounded-xl w-full lg:max-w-7xl lg:ml-31">
-      <h1 className="font-bold text-xl ">Values</h1>
-      <ul className="space-y-2 list-disc list-inside  md:text-left">
-        <li>Inspiring people</li>
-        <li>Anticipating demands</li>
-        <li>Excellence in all processes</li>
-        <li>Fully satisfied clients</li>
-        <li>Constant social action</li>
-        <li>Sustainability</li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-
-</div>
-</div>
-     </div>
   )
 }
 
